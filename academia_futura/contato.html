@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar em Contato - Academia Futura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>Academia Futura</h1>
+        <nav class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Seção Contato -->
+    <section class="section">
+        <h2>Entrar em Contato</h2>
+        <p>Quer saber mais sobre nossos planos e serviços? Envie suas dúvidas para nós!</p>
+        
+        <!-- Formulário de Contato -->
+        <form action="processa_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{11}" required>
+
+            <label for="duvida">Dúvida:</label>
+            <textarea id="duvida" name="duvida" required></textarea>
+            
+
+            <button type="submit"></form>Enviar</button>
+        </form>
+
+        <!-- Informações de Contato -->
+        <h3>Informações de Contato</h3>
+        <p>Telefone: (61) 1234-5678</p>
+        <p>Endereço: Rua Blau, 123 - Gotantinga - BSBanda</p>
+        <center><a href="https://wa.me/556199487325?text=Olá%2C%20gostaria%20de%20mais%20informações!" target="_blank">
+            <button style="background-color: #ff0000; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+            Envie uma mensagem no whatsapp!
+            </button></a></center>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Academia Futura. Todos os direitos reservados.</p>
+        <div class="social-links">
+            <a href="https://facebook.com" aria-label="Facebook" target="_blank">Facebook</a>
+            <a href="https://instagram.com" aria-label="Instagram" target="_blank">Instagram</a>
+            <a href="https://twitter.com" aria-label="Twitter" target="_blank">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
